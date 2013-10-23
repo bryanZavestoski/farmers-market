@@ -1,0 +1,11 @@
+.test
+  - @places.each do |p|
+    h1 =p.name
+    p =p.location
+    p =p.created_at.strftime('%l:%M %m/%d/%Y')
+
+
+
+div id='map' style="width:800px;height:500px;position: static;"
+script type='text/javascript'
+  | var map = L.mapbox.map('map', 'bzavestoski.map-cdbhptn8').setView([37.82, -122.35], 12);;
